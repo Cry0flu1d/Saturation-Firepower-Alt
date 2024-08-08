@@ -12,7 +12,7 @@
 		"pierceArmor": true,
 		"hitSize": 7.5,
 		"length": 216,
-		"damage": 96,
+		"damage": 90,
 		"bulletInterval": 8,
 		"intervalBullets": 1,
 		"intervalRandomSpread": 0,

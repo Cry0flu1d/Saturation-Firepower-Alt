@@ -3,6 +3,7 @@
 	"color": "#EFDDFF",
 	"healthMultiplier": 1.2,
 	"speedMultiplier": 0.66,
+	"transitionDamage": 80,
 	"effectChance": 0.8,
 	"effect": {
 		"type": "ParticleEffect",

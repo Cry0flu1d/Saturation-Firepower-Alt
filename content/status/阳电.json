@@ -4,6 +4,7 @@
 	"damage": 0.3,
 	"healthMultiplier": 0.75,
 	"speedMultiplier": 1.2,
+	"transitionDamage": 80,
 	"effectChance": 0.8,
 	"effect": {
 		"type": "ParticleEffect",
