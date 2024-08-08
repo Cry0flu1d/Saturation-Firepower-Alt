@@ -105,6 +105,20 @@ SFlib.addToResearch(map5dw, {
 	new Objectives.SectorComplete(map4pd))
 });
 
+const map4hg = new SectorPreset("湍流河谷", TBLY, 47);
+map4hg.description = "顺流而下是一片河谷区域，资源丰富但易攻难守，下游就是入海口，在此处建立据点，彻底剿灭跟随而来和从海上回防的敌人，保证制海权在我方手上。";
+map4hg.difficulty = 11;
+map4hg.alwaysUnlocked = false;
+map4hg.addStartingItems = true;
+map4hg.captureWave = 110;
+map4hg.localizedName = "湍流河谷";
+exports.map4hg = map4hg;
+SFlib.addToResearch(map4hg, {
+	parent: "中央盆地",
+	objectives: Seq.with(
+	new Objectives.SectorComplete(map4pd))
+});
+
 const map5hs = new SectorPreset("火山岛", TBLY, 13);
 map5hs.description = "海军先遣队在火山口附近建立了一个基地，这里可开采矿物并不多。分离出矿渣中的矿物质，在其余部队赶来之前，消灭追兵并建立基地";
 map5hs.difficulty = 13;
@@ -114,7 +128,7 @@ map5hs.captureWave = 115;
 map5hs.localizedName = "火山岛";
 exports.map5hs = map5hs;
 SFlib.addToResearch(map5hs, {
-	parent: "中央盆地",
+	parent: "湍流河谷",
 	objectives: Seq.with(
 	new Objectives.SectorComplete(map4pd))
 });
