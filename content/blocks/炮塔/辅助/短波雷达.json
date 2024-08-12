@@ -8,7 +8,7 @@
 	"targetGround": true,
 	"targetAir": true,
 	"canOverdrive": false,
-	"range": 1200,
+	"range": 800,
 	"fogRadiusMultiplier": 0,
 	"recoil": 0,
 	"customShadow": false,
@@ -76,7 +76,7 @@
 			"colorFrom": "FFFFFF80",
 			"colorTo": "FFFFFF80"
 		},
-		"splashDamageRadius": 1200,
+		"splashDamageRadius": 800,
 		"splashDamage": 0.1,
 		"buildingDamageMultiplier": 0,
 		"hitEffect": "none",

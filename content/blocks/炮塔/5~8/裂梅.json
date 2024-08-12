@@ -6,7 +6,7 @@
 	"reload": 138,
 	"range": 620,
 	"maxAmmo": 36,
-	"ammoPerShot": 5,
+	"ammoPerShot": 8,
 	"recoilTime": 90,
 	"recoil": 5,
 	"cooldownTime": 60,
@@ -17,7 +17,7 @@
 	"inaccuracy": 12,
 	"shootSound": "dullExplosion",
 	"rotateSpeed": 2,
-	"coolantMultiplier": 1.5,
+	"coolantMultiplier": 0.65,
 	"velocityRnd": 0.13,
 	"xRand": 10,
 	"shoot": {
@@ -26,7 +26,7 @@
 	},
 	"consumes": {
 		"coolant": {
-			"amount": 1,
+			"amount": 2,
 			"optional": true
 		}
 	},
@@ -224,7 +224,7 @@
 			"speed": 7,
 			"lifetime": 96,
 			"sprite": "shell",
-			"ammoMultiplier": 4,
+			"ammoMultiplier": 3,
 			"pierce": true,
 			"pierceCap": 4,
 			"collides": true,
@@ -489,9 +489,9 @@
 	},
 	"requirements": [
 		"graphite/750",
-		"硅钢/600",
-		"surge-alloy/500",
-		"裂位能/420",
+		"硅钢/800",
+		"surge-alloy/600",
+		"裂位能/550",
 		"二级协议/5"
 	],
 	"category": "turret",

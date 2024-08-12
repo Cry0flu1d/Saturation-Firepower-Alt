@@ -4,10 +4,10 @@
 	"type": "OverdriveProjector",
 	"health": 480,
 	"size": 3,
-	"range": 160,
-	"phaseRangeBoost": 40,
+	"range": 225,
+	"phaseRangeBoost": 45,
 	"speedBoostPhase": 1,
-	"speedBoost": 2.75,
+	"speedBoost": 2.25,
 	"hasBoost": true,
 	"useTime": 60,
 	"consumes": {
@@ -26,7 +26,7 @@
 	"硅钢/250",
 	"surge-alloy/230",
 	"裂位能/70",
-	"二级协议/2"
+	"二级协议/1"
 	],
 	"category": "effect",
 	"research": "overdrive-dome"

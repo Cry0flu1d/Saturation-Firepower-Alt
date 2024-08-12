@@ -26,7 +26,7 @@
 		"colorTo": "00000000"
 	},
 	"consumes": {
-		"power": 10
+		"power": 16
 	},
 	"requirements": [
 		"镄/200",

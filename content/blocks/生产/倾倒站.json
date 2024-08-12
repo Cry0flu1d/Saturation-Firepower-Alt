@@ -1,5 +1,5 @@
 {
-	"extendedType": "MultiCrafter",
+	"type": "multicraft.MultiCrafter",
 	"name": "倾倒站",
 	"health": 360,
 	"size": 2,
@@ -11,53 +11,63 @@
 		"lead/80",
 		"metaglass/40"
 	],
-	"craftPlans": [
-		{
-			"consumes": {
-				"items": [
-					"水桶/1"
-				]
-			},
-			"outputLiquid": "water/2",
-			"craftTime": 30
-		},
-		{
-			"consumes": {
-				"items": [
-					"矿渣桶/1"
-				]
-			},
-			"outputLiquid": "slag/2",
-			"craftTime": 30
-		},
-		{
-			"consumes": {
-				"items": [
-					"冷冻液桶/1"
-				]
-			},
-			"outputLiquid": "cryofluid/2",
-			"craftTime": 30
-		},
-		{
-			"consumes": {
-				"items": [
-					"石油桶/1"
-				]
-			},
-			"outputLiquid": "oil/2",
-			"craftTime": 30
-		},
-		{
-			"consumes": {
-				"items": [
-					"纳米流体桶/1"
-				]
-			},
-			"outputLiquid": "纳米流体/2",
-			"craftTime": 30
-		}
-	],
+	"recipes": [
+        {
+            "input": {
+                "items": [
+                    "饱和火力-水桶/1"
+                ]
+            },
+            "output": {
+                "fluids": "water/2"
+            },
+            "craftTime": 30
+        },
+        {
+            "input": {
+                "items": [
+                    "饱和火力-矿渣桶/1"
+                ]
+            },
+            "output": {
+                "fluids": "slag/2"
+            },
+            "craftTime": 30
+        },
+        {
+            "input": {
+                "items": [
+                    "饱和火力-冷冻液桶/1"
+                ]
+            },
+            "output": {
+                "fluids": "cryofluid/2"
+            },
+            "craftTime": 30
+        },
+        {
+            "input": {
+                "items": [
+                    "饱和火力-石油桶/1"
+                ]
+            },
+            "output": {
+                "fluids": "oil/2"
+            },
+            "craftTime": 30
+        },
+        {
+            "input": {
+                "items": [
+                    "饱和火力-纳米流体桶/1"
+                ]
+            },
+            "output": {
+                "fluids": "饱和火力-纳米流体/2"
+            },
+            "craftTime": 30
+        }
+    ],
 	"category": "crafting",
 	"research":"灌注站"
 }

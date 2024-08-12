@@ -12,6 +12,7 @@
 	"trailScl": 4.5,
 	"health": 44800,
 	"armor": 14,
+	"immunities":["burning"],
 	"faceTarget": false,
 	"research": "海4",
 	"requirements": {

@@ -107,7 +107,7 @@
 			"inaccuracy": 16,
 			"bullet": {
 				"type": "LightningBulletType",
-				"damage": 32,
+				"damage": 68,
 				"lightningColor": "FFA05C",
 				"hitColor": "FFA05C",
 				"lightningLength": 12,

@@ -53,7 +53,7 @@
 	},
 	"consumeAmmoOnce": false,
 	"maxAmmo": 24,
-	"ammoPerShot": 3,
+	"ammoPerShot": 4,
 	"ammoTypes": {
 		"硅钢": {
 			"type": "MissileBulletType",
@@ -358,9 +358,9 @@
 		}
 	},
 	"requirements": [
-		"graphite/100",
-		"titanium/95",
-		"silicon/70",
+		"graphite/150",
+		"硅钢/125",
+		"thorium/80",
 		"一级协议/0"
 	],
 	"category": "turret",

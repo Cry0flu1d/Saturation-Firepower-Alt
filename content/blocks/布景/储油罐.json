@@ -7,7 +7,7 @@
 	"liquidCapacity": 8400,
 	"insulated":true,
 	"absorbLasers":true,
-	//"buildCostMultiplier": 50,
+	"buildCostMultiplier": 0.5,
 	"rebuildable": false,
 	"buildVisibility": "editorOnly",
 	"requirements": [

@@ -3,7 +3,7 @@
 	"type": "AutoDoor",
 	"health": 24000,
 	"size": 2,
-	//"buildCostMultiplier": 20,
+	"buildCostMultiplier": 0.4,
 	"rebuildable": false,
 	"buildVisibility": "editorOnly",
 	"category": "defense",

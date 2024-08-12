@@ -1,5 +1,5 @@
 {
-	"extendedType": "MultiCrafter",
+	"type": "multicraft.MultiCrafter",
 	"name": "螺旋压缩机",
 	"health": 1800,
 	"size": 4,
@@ -8,7 +8,8 @@
 	"hasItems": true,
 	"itemCapacity": 20,
 	"liquidCapacity": 120,
-	/*"drawer": {
+	/*Currently bugged, but why?
+    "drawer": {
 		"type": "DrawMulti",
 		"drawers": [
 			"DrawDefault",
@@ -28,54 +29,55 @@
 		"一级协议/0",
 		"水桶/4"
 	],
-	"consumes": {
-		"power": 7.5
-	},
-	"craftPlans": [
-		{
-			"consumes": {
-				"items": [
-					"coal/8"
-				],
-				"liquids": [
-					"water/1.6"
-				]
-			},
-			"outputItem": "graphite/4",
-			"craftTime": 7.5
-		},
-		{
-			"consumes": {
-				"items": [
-					"spore-pod/4"
-				]
-			},
-			"outputLiquid": "oil/1.6",
-			"craftTime": 15
-		},
-		{
-			"consumes": {
-				"items": [
-					"titanium/2"
-				],
-				"liquids": [
-					"oil/2"
-				]
-			},
-			"outputItem": "plastanium/1",
-			"craftTime": 7.5
-		},
-		{
-			"consumes": {
-				"items": [
-					"titanium/8",
-					"石油桶/1"
-				]
-			},
-			"outputItem": "plastanium/5",
-			"craftTime": 15
-		}
-	],
+	"recipes": [
+        {
+            "input": {
+                "items": "coal/8",
+                "fluids": "water/1.6",
+                "power": 7.5
+            },
+            "output": {
+                "items": "graphite/4"
+            },
+            "craftTime": 7.5
+        },
+        {
+            "input": {
+                "items": [
+                    "spore-pod/4"
+                ],
+                "power": 7.5
+            },
+            "output": {
+                "fluids": "oil/1.6"
+            },
+            "craftTime": 15
+        },
+        {
+            "input": {
+                "items": "titanium/2",
+                "fluids": "oil/2",
+                "power": 7.5
+            },
+            "output": {
+                "items": "plastanium/1"
+            },
+            "craftTime": 7.5
+        },
+        {
+            "input": {
+                "items": [
+                    "titanium/8",
+                    "饱和火力-石油桶/1"
+                ],
+                "power": 7.5
+            },
+            "output": {
+                "items": "plastanium/5"
+            },
+            "craftTime": 15
+        }
+    ],
 	"category": "crafting",
 	"research": "塑钢厂"
 }

@@ -74,6 +74,7 @@
 			"rotateSpeed": 2,
 			"reload": 110,
 			"cooldownTime": 40,
+			"layerOffset": 0.1,
 			"mirror": false,
 			"parts": [
 				{

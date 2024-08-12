@@ -17,7 +17,7 @@
 	"mechSideSway":0.4,
 	"ammoType":"石油桶",
 	"ammoCapacity": 300,
-	"immunities":["burning","blasted","崩溃","殁火"],
+	"immunities":["burning","blasted","崩溃","殁火","tarred","油蚀"],
 	"research":"特种工厂",
 	"abilities": [
 		{

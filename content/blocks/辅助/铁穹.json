@@ -28,7 +28,7 @@
 		"colorTo": "FEEBB300"
 	},
 	"consumes": {
-		"power": 16
+		"power": 25
 	},
 	"requirements": [
 		"lead/1200",

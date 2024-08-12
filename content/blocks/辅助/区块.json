@@ -8,8 +8,14 @@
 	"phaseRangeBoost": 0,
 	"speedBoostPhase": 0,
 	"hasBoost": false,
+	"useTime": 200,
 	"consumes": {
-		"power": 25
+		"power": 25,
+		"items": {
+			"items": [
+				"phase-fabric/1"
+			]
+		}
 	},
 	"requirements": [
 		"lead/800",

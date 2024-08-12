@@ -60,11 +60,11 @@
 	"ammoTypes": {
 		"titanium": {
 			"type": "PointBulletType",
-			"damage": 80,
+			"damage": 72,
 			"lifetime": 10,
 			"speed": 100,
 			"reloadMultiplier": 16,
-			"ammoMultiplier": 3,
+			"ammoMultiplier": 4,
 			"trailSpacing": 8,
 			"trailEffect": {
 				"type": "ParticleEffect",
@@ -258,7 +258,7 @@
 		"surge-alloy": {
 			"type": "PointBulletType",
 			"inaccuracy": 3,
-			"damage": 110,
+			"damage": 108,
 			"lifetime": 12,
 			"speed": 100,
 			"rangeChange": 40,
@@ -327,7 +327,7 @@
 			"spawnBullets": [
 				{
 					"type": "LightningBulletType",
-					"damage": 110,
+					"damage": 108,
 					"lightningLength": 64,
 					"lightningLengthRand": 12,
 					"shootEffect": "shootHeal",

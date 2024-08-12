@@ -221,8 +221,7 @@
 		"sideAngle": 25,
 		"sideWidth": 2,
 		"sideLength": 420,
-		"pierceCap": 18,
-		"pierceArmor": true,
+		"pierceCap": 15,
 		"damage": 4880,
 		"buildingDamageMultiplier": 0.001,
 		"lifetime": 84,
@@ -284,7 +283,7 @@
 		}
 	},
 	"consumes": {
-		"power": 175,
+		"power": 192,
 		"coolant": {
 			"amount": 2,
 			"optional": true
