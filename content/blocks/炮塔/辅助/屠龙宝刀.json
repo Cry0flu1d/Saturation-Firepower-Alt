@@ -108,11 +108,13 @@
 	"smokeEffect": "none",
 	"shootType": {
 		"type": "BasicBulletType",
-		"absorbable": true,
+		"killShooter": true,
+		"absorbable": false,
 		"hittable": false,
 		"pierceArmor": true,
 		"collidesGround": false,
 		"collidesAir": true,
+		"scaleLife": true,
 		"hitSize": 50,
 		"chargeEffect": "none",
 		"parts": [
@@ -158,7 +160,7 @@
 			"hittable": false,
 			"collides": false,
 			"absorbable": false,
-			"splashDamage": 55,
+			"splashDamage": 960,
 			"splashDamageRadius": 30,
 			"speed": 0,
 			"hitEffect": "none",
@@ -212,31 +214,35 @@
 						}
 					]
 				},
-				"damage": 240,
+				"damage": 640,
 				"hitShake": 8,
-				"lightningDamage": 160,
-				"lightning": 2,
+				"lightningDamage": 360,
+				"lightning": 4,
 				"lightningLength": 33,
 				"lightningColor": "25C9AB",
 				"hitSound": "plasmaboom",
 				"speed": 20,
 				"lifetime": 18,
 				"splashDamageRadius": 125,
-				"splashDamage": 405
+				"splashDamage": 880,
+				"status": "崩解",
+				"statusDuration": 120
 			}
 		},
-		"damage": 8000,
-		"splashDamageRadius": 250,
-		"splashDamage": 24000,
-		"status": "崩溃",
+        "damage": 32000,
+        "splashDamageRadius": 800,
+        "splashDamage": 17200,
+        "lightningDamage": 2220,
+		"status": "崩解",
 		"statusDuration": 1800,
-		"lightningDamage": 1280,
-		"lightning": 8,
-		"lightningLength": 66,
+		"lightning": 15,
+		"lightningLength": 64,
 		"lightningColor": "25C9AB",
-		"speed": 60,
-		"lifetime": 200,
-		"drag": 0.009,
+		"pierce": true,
+		"fragOnHit": false,
+		"scaledSplashDamage": true,
+		"speed": 75,
+		"lifetime": 180,
 		"sprite": "circle-bullet",
 		"backColor": "25C9AB",
 		"frontColor": "FFFFFF",
@@ -360,7 +366,7 @@
 					"colorFrom": "BFFFDB",
 					"colorTo": "25C9AB"
 				},
-				{
+				/*{
 					"type": "ParticleEffect",
 					"particles": 1,
 					"sizeFrom": 90,
@@ -371,7 +377,7 @@
 					"colorFrom": "00000000",
 					"colorTo": "000000A8",
 					"layer": 99
-				},
+				},*/
 				{
 					"type": "ParticleEffect",
 					"particles": 1,
@@ -476,11 +482,12 @@
 			"hittable": false,
 			"collides": false,
 			"absorbable": false,
-			"damage": 8800,
-			"splashDamageRadius": 1200,
-			"splashDamage": 24380,
+			"damage": 18800,
+			"splashDamageRadius": 1500,
+			"splashDamage": 96000,
+			"scaledSplashDamage": true,
 			"status": "绝判",
-			"statusDuration": 735,
+			"statusDuration": 1800,
 			"speed": 0,
 			"lifetime": 179,
 			"sprite": "饱和火力-海胆",
@@ -510,7 +517,7 @@
 						"colorFrom": "BFFFDB50",
 						"colorTo": "BFFFDB50"
 					},
-					{
+					/*{
 						"type": "ParticleEffect",
 						"particles": 1,
 						"sizeFrom": 99999,
@@ -522,7 +529,7 @@
 						"colorFrom": "000000FF",
 						"colorTo": "00000000",
 						"layer": 220
-					},
+					},*/
 					{
 						"type": "ParticleEffect",
 						"particles": 1,
@@ -653,7 +660,7 @@
 					}
 				]
 			},
-			"bulletInterval": 0.5,
+			"bulletInterval": 0.45,
 			"intervalBullets": 3,
 			"intervalRandomSpread": 360,
 			"intervalSpread": 9,
@@ -663,7 +670,7 @@
 				"trailEffect": "none",
 				"speed": 2,
 				"lifetime": 150,
-				"splashDamage": 125,
+				"splashDamage": 362,
 				"splashDamageRadius": 30,
 				"hitEffect": "none",
 				"despawnEffect": "none",
@@ -718,18 +725,20 @@
 					"fragRandomSpread": 0,
 					"fragBullet": {
 						"type": "LaserBulletType",
-						"lightningSpacing": 18,
-						"lightningLength": 3,
+						"lightningSpacing": 20,
+						"lightningLength": 6,
 						"lightningDelay": 0.8,
 						"lightningLengthRand": 6,
-						"lightningDamage": 188,
+						"lightningDamage": 288,
 						"lightningColor": "BFFFDB",
-						"length": 480,
+						"status": "崩解",
+						"statusDuration": 840,
+						"length": 550,
 						"width": 40,
 						"sideAngle": 130,
 						"sideWidth": 1.6,
 						"sideLength": 200,
-						"damage": 263.75,
+						"damage": 1124,
 						"lifetime": 90,
 						"colors": [
 							"BFFFDB80",
@@ -743,7 +752,7 @@
 			},
 			"fragLifeMin": 0.6,
 			"fragLifeMax": 1.5,
-			"fragBullets": 760,
+			"fragBullets": 750,
 			"fragBullet": {
 				"type": "BasicBulletType",
 				"hitSound": "explosionbig",
@@ -782,20 +791,21 @@
 				"sprite": "circle-bullet",
 				"shrinkX": 0.8,
 				"shrinkY": 0.8,
-				"status": "余热",
-				"statusDuration": 35,
-				"lightningDamage": 133,
-				"lightning": 5,
-				"lightningLengthRand": 9,
-				"lightningLength": 9,
+				"status": "崩解",
+				"statusDuration": 500,
+				"lightningDamage": 844,
+				"lightning": 6,
+				"lightningLengthRand": 20,
+				"lightningLength": 10,
 				"lightningColor": "BFFFDB",
 				"backColor": "BFFFDB",
 				"frontColor": "FFFFFF",
 				"speed": 150,
 				"lifetime": 490,
 				"drag": 0.1,
+				"scaledSplashDamage": true,
 				"splashDamageRadius": 105,
-				"splashDamage": 263.86
+				"splashDamage": 403.56
 			}
 		}
 	},
@@ -803,7 +813,7 @@
 		"power": 64000,
 		"liquid": "cryofluid/60"
 	},
-	"range": 4800,
+	"range": 5600,
 	"category": "turret",
 	"buildVisibility": "sandboxOnly",
 	"requirements": [

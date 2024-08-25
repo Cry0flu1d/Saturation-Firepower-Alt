@@ -1,0 +1,48 @@
+{
+	"name": "崩解",
+	"color": "BFFFDB",
+	"damage": 108,
+	"healthMultiplier": 0.6,
+	"speedMultiplier": 0.5,
+	"damageMultiplier": 0.6,
+	"reloadMultiplier": 0.5,
+	"dragMultiplier": 2.8,
+	"effectChance": 0.12,
+	"effect": {
+		"type": "MultiEffect",
+		"effects": [
+			{
+				"type": "ParticleEffect",
+				"particles": 2,
+				"baseLength": 15,
+				"length": 80,
+				"lifetime": 40,
+				"sizeInterp": "pow3In",
+				"interp": "fastSlow",
+				"spin": 0.5,
+				"region": "饱和火力-菱形",
+				"sizeFrom": 8,
+				"sizeTo": 0,
+				"colorFrom": "BFFFDB",
+				"colorTo": "BFFFDB"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 8,
+				"line": true,
+				"region": "饱和火力-星",
+				"interp": "fastSlow",
+				"sizeInterp": "pow3In",
+				"strokeFrom": 3,
+				"strokeTo": 0,
+				"lenFrom": 8,
+				"lenTo": 0,
+				"length": 60,
+				"baseLength": 15,
+				"lifetime": 40,
+				"colorFrom": "BFFFDB",
+				"colorTo": "BFFFDB"
+			}
+		]
+	}
+}

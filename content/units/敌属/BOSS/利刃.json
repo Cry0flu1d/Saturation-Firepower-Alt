@@ -34,7 +34,7 @@
 		"freezing","melting","disarmed",
 		"sapped","shocked","slow",
 		"tarred","unmoving","wet",
-		"spore-slowed","corroded","干扰","拆解"
+		"spore-slowed","corroded","干扰","拆解","崩解"
 	],
 	"rotateSpeed": 1.2,
 	"ammoCapacity": 99999,
