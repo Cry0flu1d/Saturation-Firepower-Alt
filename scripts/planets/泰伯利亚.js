@@ -236,7 +236,7 @@ SFlib.addToResearch(map9mj, {
 	objectives: Seq.with(
 	new Objectives.SectorComplete(map7xx))
 });
-/*
+
 const map10hk = new SectorPreset("惶恐滩", TBLY, 224);
 map10hk.description = "欢迎来到星移滩，这里是[stat]第五军团的驻扎地[white]。\n多亏各个军团之间的紧密配合，北极基地群已经不复存在。对我们最大的威胁已经被解决，是时候休整一下了。\n研究一下刚刚缴获的巨型机械，等待下一步任务指示。";
 map10hk.difficulty = 0;
@@ -252,7 +252,7 @@ SFlib.addToResearch(map10hk, {
 	objectives: Seq.with(
 	new Objectives.SectorComplete(map9mj))
 });
-
+/*
 const 残兵败将 = new SectorPreset("残兵败将", TBLY, 9);
 残兵败将.description = "亚龙被击毁，他们没有逃跑的机会了。乘胜追击，摧毁这个基地，不要给敌人喘息的机会。";
 残兵败将.difficulty = 12;
