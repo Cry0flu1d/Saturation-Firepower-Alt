@@ -62,7 +62,7 @@
 	"immunities": [
 		"burning","electrified",
 		"melting","disarmed",
-		"sapped","shocked","slow",
+		"sapped","shocked","slow","unmoving",
 		"corroded","标记",
 		"裂位标记","拆解","干扰",
 		"绝判","油蚀","碎解",
@@ -119,7 +119,7 @@
 			"cooldownTime": 350,
 			"heatColor": "FF4040",
 			"shootStatusDuration": 160,
-			"shootStatus": "unmoving",
+			"shootStatus": "重载",
 			"parentizeEffects": true,
 			"shoot": {
 				"type": "ShootPattern",

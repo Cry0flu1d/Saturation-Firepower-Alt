@@ -86,6 +86,12 @@
 			"haloRotateSpeed": -0.3
 		}
 	],
+	"immunities": [
+		"burning","electrified",
+		"melting","disarmed",
+		"sapped","shocked","slow","unmoving",
+		"corroded","拆解","干扰","崩溃"
+	],
 	"hitSize": 150,
 	"faceTarget": true,
 	"lowAltitude": true,
@@ -175,7 +181,7 @@
 			"rotateSpeed": 0.06,
 			"continuous": true,
 			"shootStatusDuration": 130,
-			"shootStatus": "unmoving",
+			"shootStatus": "重载",
 			"parentizeEffects": true,
 			"shoot": {
 				"type": "ShootPattern",

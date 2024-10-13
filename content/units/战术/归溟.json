@@ -1,0 +1,756 @@
+{
+	"type": "naval",
+	"name": "归溟",
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 144000
+	},
+	"ammoCapacity": 2300,
+	"speed": 0.75,
+	"rotateSpeed": 0.4,
+	"drawMinimap": false,
+	"drag": 0.035,
+	"accel": 0.12,
+	"fogRadius": 1200,
+	"lightRadius": 660,
+	"waveTrailX": 46.25,
+	"waveTrailY": -61.25,
+	"trailScl": 5,
+	"health": 224400,
+	"armor": 172,
+	"itemCapacity": 1250,
+	"hitSize": 85,
+	"immunities": [
+		"burning","electrified",
+		"melting","disarmed",
+		"sapped","shocked","slow","unmoving",
+		"corroded","拆解","干扰",
+		"绝判","崩溃"
+	],
+	"dpsEstimate": 1,
+	"abilities": [
+		
+		{
+			"type": "RegenAbility",
+			"percentAmount": 0.01,
+			"amount": 10
+		},
+		{
+			"type": "ShieldRegenFieldAbility",
+			"amount": 1500,
+			"max": 18000,
+			"reload": 500,
+			"range": 120,
+			"applyEffect": "none",
+			"activeEffect": {
+				"type": "WaveEffect",
+				"interp": "fastSlow",
+				"lifetime": 60,
+				"sizeFrom": 6,
+				"sizeTo": 120,
+				"strokeFrom": 12,
+				"strokeTo": 0,
+				"colorFrom": "FEEBB3A8",
+				"colorTo": "FEEBB3"
+			}
+		}
+		
+		
+	],
+	"weapons": [
+		{
+			
+			"name": "归溟1",
+			"reload": 240,
+			"mirror": false,
+			"rotate": true,
+			"rotateSpeed": 0.6,
+			"layerOffset": 1,
+			"x": 0,
+			"y": 21,
+			"shootCone": 8,
+			"inaccuracy": 1,
+			"shootSound": "malignShoot",
+			"shake": 5,
+			"recoils":2,
+			"shoot": {
+				"type" : "ShootMulti",
+				"source": {
+					"shots": 1
+				},
+				"dest": [
+					{
+						"type": "ShootBarrel",
+						"shots": 4,
+						"shotDelay": 20,
+						"barrels": [
+							-7.75,30.25,0,
+							-2.5,32.75,0,
+							2.5,32.75,0,
+							7.75,30.25,0
+						]
+					},
+					{
+						"type": "ShootBarrel",
+						"shots": 4,
+						"firstShotDelay": 120,
+						"barrels": [
+							-7.75,30.25,0,
+							-2.5,32.75,0,
+							2.5,32.75,0,
+							7.75,30.25,0
+						]
+					}
+				]
+			},
+			"bullet":{
+				"type": "BasicBulletType",
+				"damage": 462,
+				"splashDamageRadius": 40,
+				"splashDamage": 336,
+				"lightningDamage": 206,
+				"lightning": 4,
+				"lightningLength": 9,
+				"lightningLengthRand": 7,
+				"buildingDamageMultiplier": 1.5,
+				"speed": 18,
+				"lifetime": 50,
+				"hitShake": 3,
+				"width": 15,
+				"height": 24,
+				"frontColor": "FFFFFF",
+				"backColor": "FEEBB3",
+				"trailLength": 24,
+				"trailWidth": 3,
+				"trailColor": "FEEBB3AA",
+				"trailChance": 0.4,
+				"trailEffect":{
+					"type": "ParticleEffect",
+					"line": true,
+					"interp": "pow5Out",
+					"sizeInterp": "pow5In",
+					"particles":4,
+					"lifetime":20,
+					"length":20,
+					"baseLength": 10,
+					"strokeFrom":2,
+					"strokeTo":0,
+					"lightColor":"FEEBB3FF",
+					"cone":-24,
+					"lenFrom":8,
+					"lenTo":0,
+					"colorFrom": "FFFFFFAA",
+					"colorTo": "FEEBB366"
+				},
+				"shootEffect": {
+					"type": "ParticleEffect",
+					"interp": "pow10Out",
+					"sizeInterp": "pow10In",
+					"particles": 7,
+					"sizeFrom": 6,
+					"sizeTo": 0,
+					"length": 36,
+					"baseLength": 24,
+					"lifetime": 40,
+					"colorFrom": "FFFFFFAA",
+					"colorTo": "FEEBB366",
+					"cone": 15
+				},
+				"hitEffect":{
+					"type":"multiEffect",
+					"effects":[
+						
+						{
+							"type":"ParticleEffect",
+							"lightOpacity":0.6,
+							"particles":4,
+							"length":40,
+							"baseLength":20,
+							"lifetime":80,
+							"interp":"circleOut",
+							"sizeInterp":"pow3In",
+							"lightColor":"FEEBB3FF",
+							"sizeFrom":10,
+							"sizeTo":1,
+							"colorFrom":"FEEBB3FF",
+							"colorTo":"FFF9E5FF"
+						},
+						{
+							"type":"ParticleEffect",
+							"line":true,
+							"particles":8,
+							"lifetime":60,
+							"length":50,
+							"baseLength": 20,
+							"offset":20,
+							"strokeFrom":4,
+							"strokeTo":0,
+							"lightColor":"FEEBB3FF",
+							"cone":-360,
+							"lenFrom":18,
+							"lenTo":0,
+							"colorFrom":"FEEBB3FF",
+							"colorTo":"FFF9E5FF"
+						},		
+						{
+							"type":"WaveEffect",
+							"lifetime":60,
+							"sizeFrom":0,
+							"sizeTo":40,
+							"lightColor":"FEEBB3FF",
+							"interp":"pow10Out",
+							"strokeFrom":8,
+							"strokeTo":0,
+							"colorFrom":"FEEBB3FF",
+							"colorTo":"FFF9E5FF"
+						},
+						{
+							"type":"ParticleEffect",
+							"particles":1,
+							"length":0,
+							"baseLength":0,
+							"lifetime":30,
+							"lightColor":"FEEBB3FF",
+							"sizeFrom":40,
+							"sizeTo":40,
+							"colorFrom":"FEEBB377",
+							"colorTo":"FFF9E500"
+						}
+						
+					]
+				}
+			}
+			
+		},
+		{
+			
+			"name": "归溟1",
+			"reload": 240,
+			"mirror": false,
+			"rotate": true,
+			"rotateSpeed": 0.6,
+			"layerOffset": 1.001,
+			"x": 0,
+			"y": -31.75,
+			"shootCone": 8,
+			"inaccuracy": 1,
+			"shootSound": "malignShoot",
+			"shake": 5,
+			"recoils":2,
+			"shoot": {
+				"type" : "ShootMulti",
+				"source": {
+					"shots": 1
+				},
+				"dest": [
+					{
+						"type": "ShootBarrel",
+						"shots": 4,
+						"shotDelay": 20,
+						"firstShotDelay": 10,
+						"barrels": [
+							-7.75,30.25,0,
+							-2.5,32.75,0,
+							2.5,32.75,0,
+							7.75,30.25,0
+						]
+					},
+					{
+						"type": "ShootBarrel",
+						"shots": 4,
+						"firstShotDelay": 120,
+						"barrels": [
+							-7.75,30.25,0,
+							-2.5,32.75,0,
+							2.5,32.75,0,
+							7.75,30.25,0
+						]
+					}
+				]
+			},
+			"bullet":{
+				"type": "BasicBulletType",
+				"damage": 462,
+				"splashDamageRadius": 40,
+				"splashDamage": 336,
+				"lightningDamage": 206,
+				"lightning": 4,
+				"lightningLength": 9,
+				"lightningLengthRand": 7,
+				"buildingDamageMultiplier": 1.5,
+				"speed": 18,
+				"lifetime": 50,
+				"hitShake": 3,
+				"width": 15,
+				"height": 24,
+				"frontColor": "FFFFFF",
+				"backColor": "FEEBB3",
+				"trailLength": 24,
+				"trailWidth": 3,
+				"trailColor": "FEEBB3AA",
+				"trailChance": 0.4,
+				"trailEffect":{
+					"type": "ParticleEffect",
+					"line": true,
+					"interp": "pow5Out",
+					"sizeInterp": "pow5In",
+					"particles":4,
+					"lifetime":20,
+					"length":20,
+					"baseLength": 10,
+					"strokeFrom":2,
+					"strokeTo":0,
+					"lightColor":"FEEBB3FF",
+					"cone":-24,
+					"lenFrom":8,
+					"lenTo":0,
+					"colorFrom": "FFFFFFAA",
+					"colorTo": "FEEBB366"
+				},
+				"shootEffect": {
+					"type": "ParticleEffect",
+					"interp": "pow10Out",
+					"sizeInterp": "pow10In",
+					"particles": 7,
+					"sizeFrom": 6,
+					"sizeTo": 0,
+					"length": 36,
+					"baseLength": 24,
+					"lifetime": 40,
+					"colorFrom": "FFFFFFAA",
+					"colorTo": "FEEBB366",
+					"cone": 15
+				},
+				"hitEffect":{
+					"type":"multiEffect",
+					"effects":[
+						
+						{
+							"type":"ParticleEffect",
+							"lightOpacity":0.6,
+							"particles":4,
+							"length":40,
+							"baseLength":20,
+							"lifetime":80,
+							"interp":"circleOut",
+							"sizeInterp":"pow3In",
+							"lightColor":"FEEBB3FF",
+							"sizeFrom":10,
+							"sizeTo":1,
+							"colorFrom":"FEEBB3FF",
+							"colorTo":"FFF9E5FF"
+						},
+						{
+							"type":"ParticleEffect",
+							"line":true,
+							"particles":8,
+							"lifetime":60,
+							"length":50,
+							"baseLength": 20,
+							"offset":20,
+							"strokeFrom":4,
+							"strokeTo":0,
+							"lightColor":"FEEBB3FF",
+							"cone":-360,
+							"lenFrom":18,
+							"lenTo":0,
+							"colorFrom":"FEEBB3FF",
+							"colorTo":"FFF9E5FF"
+						},		
+						{
+							"type":"WaveEffect",
+							"lifetime":60,
+							"sizeFrom":0,
+							"sizeTo":40,
+							"lightColor":"FEEBB3FF",
+							"interp":"pow10Out",
+							"strokeFrom":8,
+							"strokeTo":0,
+							"colorFrom":"FEEBB3FF",
+							"colorTo":"FFF9E5FF"
+						},
+						{
+							"type":"ParticleEffect",
+							"particles":1,
+							"length":0,
+							"baseLength":0,
+							"lifetime":30,
+							"lightColor":"FEEBB3FF",
+							"sizeFrom":40,
+							"sizeTo":40,
+							"colorFrom":"FEEBB377",
+							"colorTo":"FFF9E500"
+						}
+						
+					]
+				}
+			}
+		},
+		{
+			"name": "归溟2",
+			"reload": 75,
+			"mirror": true,
+			"rotate": true,
+			"rotateSpeed": 2.2,
+			"x": 25,
+			"y": -63,
+			"shootY": 6,
+			"shootSound": "laser",
+			"recoils": 1,
+			"autoTarget": true,
+			"shoot":{
+				"type": "ShootHelix",
+				"scl": 4,
+				"mag": 5
+			},
+			"bullet":{
+				"type":"BasicBulletType",
+				"sprite": "circle-bullet",
+				"shrinkY": 0,
+				"damage": 40,
+				"splashDamageRadius": 20,
+				"splashDamage": 40,
+				"pierceArmor": true,
+				"speed": 4,
+				"lifetime": 120,
+				"hitShake": 2,
+				"width": 10,
+				"height": 10,
+				"status": "unmoving",
+				"statusDuration": 20,
+				"frontColor": "FFFFFF",
+				"backColor": "FEEBB3",
+				"trailLength": 8,
+				"trailWidth": 2,
+				"trailColor": "FEEBB3AA",
+				"shootEffect": "shootBig2",
+				"hitEffect": {
+					"type":"WaveEffect",
+					"lifetime":20,
+					"sizeFrom":0,
+					"sizeTo":20,
+					"strokeFrom":3,
+					"strokeTo":0,
+					"colorFrom":"FEEBB3FF",
+					"colorTo":"FFF9E5FF"
+				},
+				"fragBullets": 5,
+				"fragRandomSpread": 0,
+				"fragBullet": {
+					"type": "LaserBulletType",
+					"pierceArmor": true,
+					"status": "崩溃",
+					"statusDuration": 60,
+					"hitEffect": {
+						"type": "ParticleEffect",
+						"particles": 3,
+						"line": true,
+						"interp": "pow5Out",
+						"sizeInterp": "pow5In",
+						"length": 40,
+						"cone": 20,
+						"baseLength": 25,
+						"lifetime": 30,
+						"colorFrom": "FFFFFF",
+						"colorTo": "FEEBB3"
+					},
+					"colors": [
+						"FEEBB390",
+						"FEEBB3A8",
+						"FEEBB3"
+					],
+					"despawnEffect": "none",
+					"damage": 110,
+					"width": 18,
+					"length": 160,
+					"lifetime": 40
+				},
+				"spawnBullets":[
+					{
+						"type":"EmpBulletType",	
+						"shrinkY": 0,
+						"sprite": "large-orb",
+						"damage": 220,
+						"splashDamageRadius": 80,
+						"splashDamage": 380,
+						"lightningDamage": 120,
+						"lightning": 6,
+						"lightningLength": 12,
+						"lightningLengthRand": 12,
+						"pierceArmor": true,
+						"speed": 4,
+						"lifetime": 120,
+						"timeIncrease": 3,
+						"powerDamageScl": 3,
+						"powerSclDecrease": 0.2,
+						"unitDamageScl": 1.1,
+						"status": "unmoving",
+						"statusDuration": 50,
+						"width": 24,
+						"height": 24,
+						"frontColor": "FFFFFF",
+						"backColor": "FEEBB3",
+						"trailLength": 18,
+						"trailWidth": 4,
+						"trailColor": "FEEBB3AA",
+						"bulletInterval": 6,
+						"intervalBullets": 4,
+						"intervalRandomSpread": 360,
+						"intervalSpread": 16,
+						"intervalAngle": 0,
+						"intervalBullet": {
+							"type": "LightningBulletType",
+							"damage": 64,
+							"lightningColor": "FEEBB388",
+							"hitColor": "FEEBB388",
+							"lightningLength": 8,
+							"lightningLengthRand": 4,
+							"hitEffect": "hitLancer",
+							"despawnEffect": "none",
+							"status": "崩溃",
+							"statusDuration": 40
+						},
+						"fragBullets": 5,
+						"fragRandomSpread": 0,
+						"fragBullet": {
+							"type": "LaserBulletType",
+							"pierceArmor": true,
+							"status": "崩溃",
+							"statusDuration": 100,
+							"hitEffect": {
+								"type": "ParticleEffect",
+								"particles": 3,
+								"line": true,
+								"interp": "pow5Out",
+								"sizeInterp": "pow5In",
+								"length": 64,
+								"cone": 30,
+								"baseLength": 40,
+								"lifetime": 40,
+								"colorFrom": "FFFFFF",
+								"colorTo": "FEEBB3"
+							},
+							"colors": [
+								"FEEBB390",
+								"FEEBB3A8",
+								"FEEBB3"
+							],
+							"despawnEffect": "none",
+							"damage": 220,
+							"width": 24,
+							"length": 288,
+							"lifetime": 40
+						},
+						"hitPowerEffect":{
+							"type":"ParticleEffect",
+							"particles":5,
+							"baseLength":40,
+							"length":30,
+							"lifetime":20,
+							"sizeFrom":4,
+							"sizeTo":0,
+							"colorFrom":"FEEBB3FF",
+							"colorTo":"FFF9E5FF",
+							"cone":360
+						},
+						"hitEffect": {
+							"type": "multiEffect",
+							"effects":[
+								{
+									"type": "WrapEffect",
+									"effect": "dynamicSpikes",
+									"color": "FEEBB3",
+									"rotation": 80
+								},
+								{
+									"type":"ParticleEffect",
+									"line":true,
+									"particles":12,
+									"lifetime":60,
+									"interp":"circleOut",
+									"offset":10,
+									"length":70,
+									"lightColor":"FEEBB3",
+									"strokeFrom":4,
+									"strokeTo":0,
+									"lenFrom":30,
+									"lenTo":10,
+									"colorFrom":"FEEBB3FF",
+									"colorTo":"FFF9E5AA"
+								},
+								{
+									"type":"ParticleEffect",
+									"particles":8,
+									"length":75,
+									"baseLength":15,
+									"lifetime":75,
+									"lightColor":"FCF387FF",
+									"interp":"circleOut",
+									"cone":360,
+									"colorFrom":"FEEBB3FF",
+									"colorTo":"FFF9E5AA",
+									"sizeFrom":16,
+									"sizeTo":0
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			
+			"name": "归溟3",
+			"reload": 120,
+			"mirror": true,
+			"rotate": true,
+			"rotateSpeed": 3,
+			"x": 31.75,
+			"y": 3,
+			"shootY": 10.25,
+			"shootCone": 8,
+			"inaccuracy": 3,
+			"shootSound": "bolt",
+			"shake": 0.8,
+			"recoils": 0.8,
+			"controllable": false,
+			"autoTarget": true,
+			"shoot":{
+				"shots": 15,
+				"shotDelay": 3
+			},
+			"bullet":{
+				"type": "SapBulletType",
+				"damage": 112,
+				"buildingDamageMultiplier": 2,
+				"sapStrength": 0.45,
+				"pierceArmor": true,
+				"length": 220,
+				"width": 0.25,
+				"lifetime": 30,
+				"frontColor": "FFFFFF",
+				"backColor": "FEEBB3",
+				"color": "FEEBB3",
+				"lightColor": "FEEBB3AA",
+				"shootEffect": "shootBig",
+				"status": "disarmed",
+				"statusDuration": 12,
+				"smokeEffect": "colorSpark",
+				"hitEffect": {
+					"type": "multiEffect",
+					"effects":[
+						{
+							"type": "ParticleEffect",
+							"particles": 4,
+							"line": true,
+							"interp": "pow5Out",
+							"sizeInterp": "pow5In",
+							"length": 20,
+							"cone": 15,
+							"baseLength": 10,
+							"lifetime": 30,
+							"colorFrom": "FFFFFF",
+							"colorTo": "FEEBB3"
+						},
+						"hitBulletColor"
+					]
+				}	
+			}
+			
+		},
+		{
+			
+			"name": "归溟3",
+			"reload": 120,
+			"mirror": true,
+			"rotate": true,
+			"rotateSpeed": 3,
+			"x": 23,
+			"y": 38,
+			"shootY": 10.25,
+			"shootCone": 8,
+			"inaccuracy": 3,
+			"shootSound": "bolt",
+			"shake": 0.8,
+			"recoils": 0.8,
+			"controllable": false,
+			"autoTarget": true,
+			"shoot":{
+				"shots": 15,
+				"shotDelay": 3,
+				"firstShotDelay":60
+			},
+			"bullet":{
+				"type": "SapBulletType",
+				"damage": 112,
+				"buildingDamageMultiplier": 2,
+				"sapStrength": 0.45,
+				"pierceArmor": true,
+				"length": 220,
+				"width": 0.25,
+				"lifetime": 30,
+				"frontColor": "FFFFFF",
+				"backColor": "FEEBB3",
+				"color": "FEEBB3",
+				"lightColor": "FEEBB3AA",
+				"shootEffect": "shootBig",
+				"status": "disarmed",
+				"statusDuration": 12,
+				"smokeEffect": "colorSpark",
+				"hitEffect": {
+					"type": "multiEffect",
+					"effects":[
+						{
+							"type": "ParticleEffect",
+							"particles": 4,
+							"line": true,
+							"interp": "pow5Out",
+							"sizeInterp": "pow5In",
+							"length": 20,
+							"cone": 15,
+							"baseLength": 10,
+							"lifetime": 30,
+							"colorFrom": "FFFFFF",
+							"colorTo": "FEEBB3"
+						},
+						"hitBulletColor"
+					]
+				}	
+			}
+			
+		},
+		{
+			"name": "归溟点防",
+			"type": "PointDefenseWeapon",
+			"x": 38,
+			"y": -51,
+			"rotate": true,
+			"rotateSpeed": 10,
+			"inaccuracy": 0,
+			"shootSound": "shoot",
+			"recoil": 0,
+			"reload": 3,
+			"targetInterval": 6,
+			"targetSwitchInterval": 1,
+			"bullet": {
+				"speed": 40,
+				"lifetime": 10,
+				"shootEffect":"sparkShoot",
+				"hitEffect":{
+					"type": "ParticleEffect",
+					"particles": 5,
+					"line": true,
+					"interp": "pow10Out",
+					"sizeInterp": "pow5In",
+					"length": 15,
+					"cone": 360,
+					"baseLength": 0,
+					"lifetime": 20,
+					"colorFrom": "FFFFFF",
+					"colorTo": "FEEBB3"
+				},
+				"maxRange": 360,
+				"damage": 96
+				}}
+			]
+		}

@@ -99,17 +99,17 @@
 				"healPercent": 20,
 				"speed": 15,
 				"lifetime": 32.8,
-				"damage": 224,
+				"damage": 332,
 				"pierceArmor": true,
 				"reflectable": false,
 				"absorbable": false,
 				"pierce": true,
-				"knockback": 30,
+				"knockback": 32,
 				"splashDamageRadius": 78,
-				"splashDamage": 118,
+				"splashDamage": 167,
 				"collidesTeam": true,
 				"status": "干扰",
-				"statusDuration": 60,
+				"statusDuration": 70,
 				"frontColor": "97FFA8",
 				"backColor": "97FFA8",
 				"trailColor" :"97FFA8",
@@ -194,7 +194,7 @@
 			"shake": 4,
 			"rotate": true,
 			"rotateSpeed": 2,
-			"reload": 135,
+			"reload": 120,
 			"alternate": true,
 			"bullet": {
 				"type": "EmpBulletType",
@@ -347,10 +347,10 @@
 			"shake": 4,
 			"rotate": true,
 			"rotateSpeed": 2,
-			"reload": 135,
+			"reload": 120,
 			"alternate": true,
 			"shoot":{
-				"firstShotDelay": 45
+				"firstShotDelay": 40
 			},
 			"bullet": {
 				"type": "EmpBulletType",
@@ -503,10 +503,10 @@
 			"shake": 4,
 			"rotate": true,
 			"rotateSpeed": 2,
-			"reload": 135,
+			"reload": 120,
 			"alternate": true,
 			"shoot":{
-				"firstShotDelay": 90
+				"firstShotDelay": 80
 			},
 			"bullet": {
 				"type": "EmpBulletType",
@@ -657,7 +657,7 @@
 			"rotate": true,
 			"recoil": 0,
 			"rotateSpeed": 12,
-			"reload": 8,
+			"reload": 7.5,
 			"targetInterval": 8,
 			"targetSwitchInterval": 8,
 			"bullet": {
@@ -666,7 +666,7 @@
 				"shootEffect": "sparkShoot",
 				"hitEffect": "pointHit",
 				"maxRange": 260,
-				"damage": 80
+				"damage": 96
 			}
 		}
 	]
